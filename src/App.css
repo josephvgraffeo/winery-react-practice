@@ -1,38 +1,69 @@
-.App {
-  text-align: center;
+*, *::before, *::after {margin: 0; padding: 0; box-sizing: inherit;}
+html {scroll-behavior: smooth;}
+
+body {background-color: #dfebced5;}
+
+/********** HEADER **********/
+#top-header {
+    position: sticky;
+    top: 0;
+    padding: 10px;
+    filter: drop-shadow(3px 3px 8px #000000)
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+    background-color: #868b809b;
+    font-family: cursive;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header > h1, header > p {
+    color: #9ecd26e0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+header > h1 {
+    font-size: calc(30px + 2vw);
+    font-weight: 700;
 }
 
-.App-link {
-  color: #61dafb;
+/********** NAV **********/
+nav > button {
+    padding: 10px 30px;
+    background-color: #e8ebe4da;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav > button:first-child {
+    color: #779b1d;
+}
+
+nav >button:nth-child(2) {
+    color: rgb(135, 40, 69);
+}
+
+/********** LISTINGS **********/
+div > section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+/********** LISTING > CARD **********/
+.card {
+    flex: 1 0 250px;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid #6b8e12;
+}
+
+.card img {
+    width: 25%;
+}
+
+.card h3 {
+    font-weight: 700;
+}
+
+details {
+    margin-top: 15px;
+    margin: 5px;
 }
